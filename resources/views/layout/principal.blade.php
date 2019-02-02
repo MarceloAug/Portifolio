@@ -43,8 +43,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             @yield('conteudo')
                         </section>
                 </div>
-         
-        
             <footer class="main-footer">
                 <div class="pull-right hidden-xs">
                     © Portifolio Marcelo Augusto 2019.
