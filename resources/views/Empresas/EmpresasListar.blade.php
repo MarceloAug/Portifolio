@@ -9,15 +9,33 @@
 
     @else
 
-    <section class="content">
+
         <div class="row">
             <div class="col-xs-12">
                 <div class="box">
                     <div class="box-header">
                         <h3 class="box-title">Listagem de empresas</h3>
+                        <form action="#" method="get">
+                            <div class="box-tools">
+                                <div class="input-group input-group-sm lines">
+                                    <div> 
+                                        <select name="filtro" class="form-control">
+                                            <option value="ID">ID</option>
+                                            <option value="Nome">Nome</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <input type="text" name="campo" class="form-control pull-right" placeholder="Search">
+                                    </div>
+                                    <div class="input-group-btn">
+                                        <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="box-body">
-                        <table id="listaempresas" class="table table-bordered table-hover">
+                    <div class="box-body table-responsive no-padding">
+                        <table id="listaempresas" class="table table-hover">
                             <thead>
                                 <tr>
                                     <th>ID</th>
@@ -58,6 +76,6 @@
                 </div>
             </div>
         </div>
-    </section>      
+     
     @endif
 @stop

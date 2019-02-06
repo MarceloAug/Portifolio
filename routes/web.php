@@ -1,6 +1,5 @@
 <?php
 
-
 // rotas do CRUD de empresas
 Route::get('/empresas','EmpresasController@ListaEmpresas');
 Route::get('/empresas/remove/{id}', 'EmpresasController@removeEmpresa');
