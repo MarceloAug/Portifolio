@@ -8,3 +8,4 @@ Route::post('/empresas/AdicionaEmpresas','EmpresasController@AdicionaEmpresas');
 Route::get('/empresas/FormAdicionar','EmpresasController@FormularioAdicionar');
 Route::get('/empresas/FormEditar/{id}','EmpresasController@FormularioEditar');
 Route::post('/empresas/EditaEmpresa','EmpresasController@UpdateEmpresa');
+Route::get('/empresas/Filtra','EmpresasController@FiltraListagem');

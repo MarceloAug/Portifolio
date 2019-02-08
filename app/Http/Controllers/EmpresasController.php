@@ -3,6 +3,7 @@ use Request;
 use Validator;
 use App\Cargo;
 use App\Empresa;
+use Illuminate\Support\Facades\Input;
 use App\Http\Requests\EmpresaRequest;
 
 
@@ -58,6 +59,17 @@ class EmpresasController extends Controller{
     public function UpdateEmpresa(EmpresaRequest $request){
         Empresa::where('ID', $request->ID)->update(request()->except(['_token']));
         return redirect()->action('EmpresasController@ListaEmpresas');
+    }
+
+
+
+    public function FiltraListagem(){
+        $filtro = Input::get('filtro');
+        $campo = Input::get('campo');
+        $empresas = Empresa :: where($filtro,$campo);
+        return view('Empresas.EmpresasListar')->with('empresas', $empresas);
+        
+        
     }
     
 

@@ -4,38 +4,45 @@
 
     @if(empty($empresas))
         <div class="alert alert-danger">
-            VocÃª nÃ£o tem nenhum produto cadastrado.
+            Você não tem nenhum produto cadastrado.
         </div>
 
     @else
-
-
         <div class="row">
             <div class="col-xs-12">
                 <div class="box">
-                    <div class="box-header">
+                    <div class="box-header with-border">
                         <h3 class="box-title">Listagem de empresas</h3>
-                        <form action="#" method="get">
+                        <form action="/empresas/Filtra" method = "GET">
+                            <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                             <div class="box-tools">
-                                <div class="input-group input-group-sm lines">
-                                    <div> 
-                                        <select name="filtro" class="form-control">
-                                            <option value="ID">ID</option>
-                                            <option value="Nome">Nome</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <input type="text" name="campo" class="form-control pull-right" placeholder="Search">
-                                    </div>
-                                    <div class="input-group-btn">
-                                        <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                                <div class="input-group input-group-sm">
+                                    <div class = "lines">
+                                        <div>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                <select name="filtro" class="form-control">
+                                                    <option value="ID">ID</option>
+                                                    <option value="Nome">Nome</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <div class="input-group input-group-sm" style="width: 150px;">
+                                                     <input type="text" name="campo" class="form-control pull-right" placeholder="Search">
+
+                                                <div class="input-group-btn">
+                                                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </form>
                     </div>
-                    <div class="box-body table-responsive no-padding">
-                        <table id="listaempresas" class="table table-hover">
+                    <div class="box-body">
+                        <table id="listaempresas" class="table table-bordered">
                             <thead>
                                 <tr>
                                     <th>ID</th>
@@ -76,6 +83,5 @@
                 </div>
             </div>
         </div>
-     
     @endif
 @stop
