@@ -49,7 +49,6 @@
                                     <th>Nome</th>
                                     <th>Descricao</th>
                                     <th>Remover</th>
-                                    <th>Exibir</th>
                                     <th>Editar</th>
                                 </tr>
                             </thead>
@@ -65,11 +64,6 @@
                                         </a>
                                     </td>
                                 
-                                    <td>
-                                        <a href="/empresas/exibe/{{$e->ID}}">
-                                            <span class="glyphicon glyphicon-search"></span>
-                                        </a>
-                                    </td>
                                       <td>
                                         <a href="/empresas/FormEditar/{{$e->ID}}">
                                             <i class="glyphicon glyphicon-pencil"></i>
