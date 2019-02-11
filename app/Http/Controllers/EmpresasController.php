@@ -63,13 +63,11 @@ class EmpresasController extends Controller{
 
 
 
-    public function FiltraListagem(){
+    public function FiltraListagem(Request $request){
         $filtro = Input::get('filtro');
         $campo = Input::get('campo');
-        $empresas = Empresa :: where($filtro,$campo);
+        $empresas = Empresa :: where($filtro,$campo)->get();
         return view('Empresas.EmpresasListar')->with('empresas', $empresas);
-        
-        
     }
     
 
