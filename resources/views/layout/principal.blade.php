@@ -35,7 +35,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <ul class="sidebar-menu" data-widget="tree">
                             <li class="header">HEADER</li>
                             <li class="treeview">
-                                <a href="#"><i class="fa fa-link"></i> <span>Empresas</span>
+                                <a href="#"><img src="/svg/empresas.svg" alt="Smiley face"></i> <span>Empresas</span>
                                     <span class="pull-right-container">
                                         <i class="fa fa-angle-left pull-right"></i>
                                     </span>
