@@ -35,7 +35,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <ul class="sidebar-menu" data-widget="tree">
                             <li class="header">HEADER</li>
                             <li class="treeview">
-                                <a href="#"><img src="/svg/empresas.svg" alt="Smiley face"></i> <span>Empresas</span>
+                                <a href="#"><span>Empresas</span>
                                     <span class="pull-right-container">
                                         <i class="fa fa-angle-left pull-right"></i>
                                     </span>
@@ -63,10 +63,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div>
 
         <!-- jQuery 3 -->
-<script src="/js/jquery.min.js"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src="/js/bootstrap.min.js"></script>
-<!-- AdminLTE App -->
-<script src="/js/adminlte.min.js"></script>
+        <script src="/js/jquery.min.js"></script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="/js/bootstrap.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="/js/adminlte.min.js"></script>
     </body>
 </html>

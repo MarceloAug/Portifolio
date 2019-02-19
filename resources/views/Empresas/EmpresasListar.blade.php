@@ -57,13 +57,13 @@
                             <td> {{$e->Descricao}} </td>
                             <td>
                                 <a href="/empresas/remove/{{$e->ID}}">
-                                    <span class="glyphicon glyphicon-trash"></span>
+                                    <span class="glyphicon glyphicon-trash">Remover</span>
                                 </a>
                             </td>
                         
                               <td>
                                 <a href="/empresas/FormEditar/{{$e->ID}}">
-                                    <i class="glyphicon glyphicon-pencil"></i>
+                                    <i class="glyphicon glyphicon-pencil">Editar</i>
                                 </a>
                             </td>
                         </tr>
